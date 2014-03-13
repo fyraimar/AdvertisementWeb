@@ -1,0 +1,299 @@
+/* STYLESHEET */
+
+/* BODY */
+body {
+
+}
+
+/* CLASS */
+.page, .background {
+    position: absolute; 
+    top: 0%; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.bg_index {
+    z-index: -1; 
+}
+
+div.page_top {
+    position: absolute; 
+    top: 0%; 
+    width: 100%; 
+    height: 10%;
+}
+
+div.page_bottom {
+    position: absolute; 
+    top: 90%; 
+    width: 100%; 
+    height: 10%;
+}
+
+p.title {
+    font-size: 1.6em; 
+}
+
+p.paragraph {
+    font-size: 0.75em;
+}
+
+img.arrow {
+    position: absolute; 
+    left: 50%; 
+    width: 30px; 
+    height: 15px;
+    margin: 0 0 0 -15px; 
+    opacity: 0.8;
+}
+
+img.arrow_top {
+    position: absolute; 
+    top: 15%;
+}
+
+img.arrow_bottom {
+    position: absolute; 
+    top: 55%;
+}
+
+img.header {
+    position: absolute; 
+    left: 80%; 
+    width: 60px; 
+    margin: 0 0 0 -30px; 
+}
+
+/* LOADING */
+#loading { 
+    z-index: 999; 
+    background: white;
+}
+
+/* COVER */
+#cover {
+    z-index: 5; 
+    overflow: hidden; 
+}
+
+#title {
+    position: absolute; 
+    top: 10%; 
+    width: 100%; 
+    height: 30%; 
+}
+
+#title_bg {
+    position: absolute; 
+    left: 50%; 
+    width: 180px; 
+    margin: 0 0 0 -90px; 
+}
+
+div.t {
+    position: absolute; 
+    left: 50%; 
+    width: 100px; 
+    margin: 0 0 0 -50px; 
+    text-align: center; 
+    vertical-align: middle;
+}
+
+div.t1 {
+    top: 35%; 
+    color: white; 
+    font-size: 12px;
+}
+
+div.t2 {
+    top: 130%; 
+    color: pink;
+}
+
+div.t3 {
+    top: 145%; 
+    color: pink;
+}
+
+div.t4 {
+    top: 160%; 
+    color: pink;
+}
+
+div.t5 {
+    top: 190%; 
+    font-size: 5px;
+}
+
+div.t6 {
+    top: 85%; 
+}
+
+p.cover_hint {
+    font-size: 1.2em;
+    color: white; 
+    opacity: 0.8; 
+}
+
+#cover_arrow {
+    position: absolute; 
+    top: 80%; 
+    left: 50%; 
+    width: 40px; 
+    margin: 0 0 0 -20px; 
+    opacity: 0.8; 
+}
+
+/* PAGE1 */
+#page1 {
+    z-index: 4; 
+    overflow: hidden; 
+}
+
+#page1_photo {
+    position: absolute; 
+    /*top: 10%; */
+    left: 0;
+    width: 100%; 
+    margin: 0 0 0 -150px; 
+}
+
+#page1_text_container {
+    position: absolute; 
+    top: 75%; 
+    width: 100%; 
+    height: 25%; 
+    background: rgba(94, 92, 91, 0.6) none repeat scroll;
+    z-index: -1;
+}
+
+p.page1_text {
+    z-index: 0;
+    color: white; 
+    padding: 1.0em; 
+}
+
+/* PAGE2 */
+#page2 {
+    z-index: 3; 
+    overflow: hidden; 
+}
+
+img.page2_photo {
+    width: 100px;
+}
+
+img.page2_photo_left {
+    position: absolute; 
+    left: 33%; 
+    margin: 0 0 0 -50px; 
+}
+
+img.page2_photo_right {
+    position: absolute; 
+    left: 67%; 
+    margin: 0 0 0 -50px; 
+}
+
+div.page2_text_bg {
+    position: absolute; 
+    width: 35%; 
+    height: 5%; 
+    z-index: 0;
+    vertical-align: middle;
+}
+
+div.page2_text_bg_left {
+    text-align: right;
+}
+
+div.page2_text_bg_right {
+    text-align: left; 
+    left: 65%; 
+}
+
+p.page2_text {
+    font-size: 0.8em;
+    color: white;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    margin: 0.4em;
+}
+
+#page2_photo1 {
+    top: 17%;
+}
+
+#page2_photo2 {
+    top: 25%;
+}
+
+#page2_photo3 {
+    top: 34%;
+}
+
+#page2_photo4 {
+    top: 42%;
+}
+
+#page2_photo5 {
+    top: 51%;
+}
+
+#page2_photo6 {
+    top: 59%;
+}
+
+
+#page2_photo7 {
+    top: 68%;
+}
+
+#page2_text_bg1 {
+    top: 26%;
+    background: rgba(248, 181, 178, 0.7) none repeat scroll;
+}
+
+#page2_text_bg2 {
+    top: 34%;
+    background: rgba(222, 213, 157, 0.7) none repeat scroll;
+}
+
+#page2_text_bg3 {
+    top: 43%;
+    background: rgba(150, 163, 106, 0.7) none repeat scroll;
+}
+
+#page2_text_bg4 {
+    top: 51%;
+    background: rgba(152, 167, 190, 0.7) none repeat scroll;
+}
+
+#page2_text_bg5 {
+    top: 60%;
+    background: rgba(203, 141, 149, 0.7) none repeat scroll;
+}
+
+#page2_text_bg6 {
+    top: 68%;
+    background: rgba(171, 173, 129, 0.7) none repeat scroll;
+}
+
+#page2_text_bg7 {
+    top: 77%;
+    background: rgba(145, 173, 110, 0.7) none repeat scroll;
+}
+
+/* PAGE3 */
+#page3 {
+    z-index: 2; 
+    overflow: hidden; 
+}
+
+/* PAGE4 */
+#page4 {
+    z-index: 1; 
+    overflow: hidden; 
+}
