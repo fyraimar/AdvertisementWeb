@@ -30,6 +30,8 @@ $(function() {
     $("#page4").bind("swipeup", Page4_SwipeupHandler);
     $("#page4").bind("swipedown", Page4_SwipedownHandler);
 
+    $("#page5").bind("swipedown", Page5_SwipedownHandler);
+
 });
 
 // Page Swipe Handler
@@ -84,14 +86,17 @@ function Page4_SwipedownHandler(event) {
 
 function Page4_SwipeupHandler(event) {
 
-    // Page 4 Swipeup
+    $("#page4").transition({ y: '-100%' } , 500, 'ease');
+}
+
+function Page5_SwipedownHandler(event) {
+
+    $("#page4").transition({ y: '0%' } , 500, 'ease');
 }
 
 // Page Effects
 $(function() {
     
-    CoverEffect(); 
-
     window.setInterval(function(){
 
         // Cover Page
@@ -116,43 +121,12 @@ $(function() {
 
 });
 
-function CoverEffect() {
-
-    $("#title_bg").transition({ rotate: "+=360deg" }, 5000, 'linear', CoverEffect);
-
-}
-
 function Page1_ShowEffect() {
 
-    $("#page1_photo").css({ transform: 'scale(0)' }).transition({ scale: 1, delay: 300 });
+//    $("#page1_photo").css({ transform: 'scale(0)' }).transition({ scale: 1, delay: 300 });
     $("#page1_header").css({ y: '-100%' }).transition({ y: '0%' }, 600, 'ease');
+    $("#page1_text_title_container").css({ x: '100%' }).transition({ x: '0%' }, 600, 'ease');
     $("#page1_text_container").css({ y: '100%' }).transition({ y: '0%' }, 600, 'ease');
 }
 
-function Page2_ShowEffect() {
-    
-    $("#page2_header").css({ y: '-200%' }).transition({ y: '0%' }, 1000, 'ease');
-
-    $("#page2_photo1").css({ x: '-200%' }).transition({ x: '0%' }, 1000, 'ease');
-    $("#page2_text_bg1").css({ x: '-200%' }).transition({ x: '0%' }, 1000, 'ease');
-
-    $("#page2_photo2").css({ x: '200%' }).transition({ x: '0%' }, 1000, 'ease');
-    $("#page2_text_bg2").css({ x: '200%' }).transition({ x: '0%' }, 1000, 'ease');
-
-    $("#page2_photo3").css({ x: '-200%' }).delay(100).transition({ x: '0%' }, 1000, 'ease');
-    $("#page2_text_bg3").css({ x: '-200%' }).delay(100).transition({ x: '0%' }, 1000, 'ease');
-
-    $("#page2_photo4").css({ x: '200%' }).delay(100).transition({ x: '0%' }, 1000, 'ease');
-    $("#page2_text_bg4").css({ x: '200%' }).delay(100).transition({ x: '0%' }, 1000, 'ease');
-
-    $("#page2_photo5").css({ x: '-200%' }).delay(300).transition({ x: '0%' }, 1000, 'ease');
-    $("#page2_text_bg5").css({ x: '-200%' }).delay(300).transition({ x: '0%' }, 1000, 'ease');
-
-    $("#page2_photo6").css({ x: '200%' }).delay(300).transition({ x: '0%' }, 1000, 'ease');
-    $("#page2_text_bg6").css({ x: '200%' }).delay(300).transition({ x: '0%' }, 1000, 'ease');
-
-    $("#page2_photo7").css({ x: '-200%' }).delay(500).transition({ x: '0%' }, 1000, 'ease');
-    $("#page2_text_bg7").css({ x: '-200%' }).delay(500).transition({ x: '0%' }, 1000, 'ease');
-
-}
 

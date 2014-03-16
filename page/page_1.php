@@ -9,6 +9,9 @@
 
     <div id="page1_detail">
         <img id="page1_photo" class="bg_index" src="<?= $page1_photo ?>" />
+        <div id="page1_text_title_container">
+            <p class="page1_text_title paragraph"><?= $page1_text_title ?></p>
+        </div>
         <div id="page1_text_container">
             <p class="page1_text paragraph"><?= $page1_text ?></p>
         </div>

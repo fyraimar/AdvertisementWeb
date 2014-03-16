@@ -14,5 +14,7 @@
 
     require_once("page_4.php");
 
+    require_once("page_5.php");
+
 ?>
 </body>
